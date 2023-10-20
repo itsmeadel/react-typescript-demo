@@ -7,6 +7,8 @@ import {Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
 import { Buttons } from './components/Button';
+import { Input } from './components/Input';
+import { Container } from './components/Container';
 
 function App() {
 
@@ -41,6 +43,8 @@ function App() {
       <Buttons handleClick ={ (event, id) => {
         console.log('Button Clicked', event)
       }}/>
+      <Input value='' handleChange={(event) => console.log(event)} />
+      <Container styles= {{ border: '1px solid black', padding: '1rem'}} />
   
     </div>
   );
