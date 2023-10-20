@@ -1,8 +1,9 @@
+import { Name } from "./PersonProps"
+
+
+
 type PersonListProps= {
-    names: {
-        first : string
-        last: string
-    }[]
+    names: Name[] //'name' is an array of 'names' type.
 }
 
 

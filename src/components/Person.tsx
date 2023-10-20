@@ -1,9 +1,4 @@
-type PersonProps = {
-    name : {
-        first: string
-        last: string
-    }
-}
+import { PersonProps } from "./PersonProps" // type of props for large amount of data
 
 
 export const Person = (props: PersonProps) => {
