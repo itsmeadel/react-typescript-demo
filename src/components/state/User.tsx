@@ -12,9 +12,9 @@ export const User = () => {
     const [user, setUser] = useState<AuthUser | null>(null) 
     //user are not loggedin in website. So 'null' as a default function os state
     //<AuthUser | null> informing typeScript 
-   //{} as AuthUseras = type assertion | to let typeScript know that user is a typeOf user and won't be null
+   //{} as AuthUser as = type assertion | to let typeScript know that user is a typeOf user and won't be null
 
-    const handleLogin = () =>{
+    const handleLogin = () => {
         setUser({
             name: 'Adie',
             email:'adie@example.com',

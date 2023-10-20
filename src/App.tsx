@@ -2,6 +2,8 @@
 
 import { ThemeContextProvider } from './components/context/ThemeContext';
 import { Box } from './components/context/Box';
+import { UserContextProvider } from './components/context/UserContext';
+import { User } from './components/state/User';
 import './App.css';
 import {Greet} from "./components/Greet";
 import { Person } from "./components/Person";
@@ -40,6 +42,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
       <Greet name="Adele"  isLoggedIn={true}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
