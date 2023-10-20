@@ -6,6 +6,7 @@ import { PersonList } from './components/PersonList';
 import {Status } from './components/Status';
 import { Heading } from './components/Heading';
 import { Oscar } from './components/Oscar';
+import { Buttons } from './components/Button';
 
 function App() {
 
@@ -37,6 +38,9 @@ function App() {
       <Status status='loading'/>
       <Heading>Placeholder text</Heading>
       <Oscar><Heading>Oscar De Carpio</Heading></Oscar>
+      <Buttons handleClick ={ (event, id) => {
+        console.log('Button Clicked', event)
+      }}/>
   
     </div>
   );
