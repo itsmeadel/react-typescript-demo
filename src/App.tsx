@@ -1,4 +1,7 @@
 
+
+import { ThemeContextProvider } from './components/context/ThemeContext';
+import { Box } from './components/context/Box';
 import './App.css';
 import {Greet} from "./components/Greet";
 import { Person } from "./components/Person";
@@ -34,6 +37,9 @@ function App() {
   ]
   return (
     <div className="App">
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
       <Greet name="Adele"  isLoggedIn={true}/>
       <Person name={personName}/>
       <PersonList names={nameList}/>
@@ -45,7 +51,8 @@ function App() {
       }}/>
       <Input value='' handleChange={(event) => console.log(event)} />
       <Container styles= {{ border: '1px solid black', padding: '1rem'}} />
-  
+      
+      
     </div>
   );
 }
